@@ -1,8 +1,8 @@
-<?php namespace GeneaLabs\LaravelMixpanel\Console\Commands;
+<?php namespace Boparaiamrit\LaravelMixpanel\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Console\Kernel;
-use GeneaLabs\LaravelMixpanel\Providers\LaravelMixpanelService;
+use Boparaiamrit\LaravelMixpanel\Providers\LaravelMixpanelService;
 
 class Publish extends Command
 {

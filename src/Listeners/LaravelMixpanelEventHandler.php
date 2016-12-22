@@ -1,4 +1,4 @@
-<?php namespace GeneaLabs\LaravelMixpanel\Listeners;
+<?php namespace Boparaiamrit\LaravelMixpanel\Listeners;
 
 use Illuminate\Auth\Events\Attempting;
 use Illuminate\Auth\Events\Authenticated;
@@ -6,7 +6,7 @@ use Illuminate\Auth\Events\Login;
 use Illuminate\Auth\Events\Logout;
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Events\Dispatcher;
-use GeneaLabs\LaravelMixpanel\Events\MixpanelEvent;
+use Boparaiamrit\LaravelMixpanel\Events\MixpanelEvent;
 
 class LaravelMixpanelEventHandler
 {

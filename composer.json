@@ -1,34 +1,34 @@
 {
-    "name": "genealabs/laravel-mixpanel",
-    "description": "MixPanel wrapper for Laravel 5.",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Mike Bronner",
-            "email": "hello@genealabs.com"
-        }
-    ],
-    "autoload": {
-        "psr-4": {
-            "GeneaLabs\\LaravelMixpanel\\": "src/"
-        }
-    },
-    "require": {
-        "php": ">=7.0.0",
-        "illuminate/config": "5.1.* || 5.3.*",
-        "illuminate/events": "5.1.* || 5.3.*",
-        "illuminate/routing": "5.1.* || 5.3.*",
-        "illuminate/support": "5.1.* || 5.3.*",
-        "nesbot/carbon": "^1.19",
-        "mixpanel/mixpanel-php": "~2.0",
-        "sinergi/browser-detector": "~5.0"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "4.*"
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "GeneaLabs\\LaravelMixpanel\\Tests\\": "tests/"
-        }
-    }
+	"name": "boparaiamrit/mixpanel",
+	"description": "MixPanel wrapper for Laravel 5.",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Amritpal Singh",
+			"email": "boparaiamrit@gmail.com"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Boparaiamrit\\LaravelMixpanel\\": "src/"
+		}
+	},
+	"require": {
+		"php": ">=7.0.0",
+		"illuminate/config": "5.1.* || 5.3.*",
+		"illuminate/events": "5.1.* || 5.3.*",
+		"illuminate/routing": "5.1.* || 5.3.*",
+		"illuminate/support": "5.1.* || 5.3.*",
+		"nesbot/carbon": "^1.19",
+		"mixpanel/mixpanel-php": "~2.0",
+		"sinergi/browser-detector": "~5.0"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "4.*"
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Boparaiamrit\\LaravelMixpanel\\Tests\\": "tests/"
+		}
+	}
 }

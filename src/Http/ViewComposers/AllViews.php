@@ -1,6 +1,6 @@
-<?php namespace GeneaLabs\LaravelMixpanel\Http\ViewComposers;
+<?php namespace Boparaiamrit\LaravelMixpanel\Http\ViewComposers;
 
-use GeneaLabs\LaravelMixpanel\Events\MixpanelEvent;
+use Boparaiamrit\LaravelMixpanel\Events\MixpanelEvent;
 use Illuminate\View\View;
 
 class AllViews

@@ -1,6 +1,6 @@
-<?php namespace GeneaLabs\LaravelMixpanel\Http\Controllers;
+<?php namespace Boparaiamrit\LaravelMixpanel\Http\Controllers;
 
-use GeneaLabs\LaravelMixpanel\Http\Requests\RecordStripeEvent;
+use Boparaiamrit\LaravelMixpanel\Http\Requests\RecordStripeEvent;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
 

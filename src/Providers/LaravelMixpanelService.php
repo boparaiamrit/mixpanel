@@ -1,10 +1,10 @@
-<?php namespace GeneaLabs\LaravelMixpanel\Providers;
+<?php namespace Boparaiamrit\LaravelMixpanel\Providers;
 
-use GeneaLabs\LaravelMixpanel\LaravelMixpanel;
-use GeneaLabs\LaravelMixpanel\Listeners\LaravelMixpanelEventHandler;
-use GeneaLabs\LaravelMixpanel\Listeners\LaravelMixpanelUserObserver;
-use GeneaLabs\LaravelMixpanel\Console\Commands\Publish;
-use GeneaLabs\LaravelMixpanel\Http\ViewComposers\AllViews;
+use Boparaiamrit\LaravelMixpanel\LaravelMixpanel;
+use Boparaiamrit\LaravelMixpanel\Listeners\LaravelMixpanelEventHandler;
+use Boparaiamrit\LaravelMixpanel\Listeners\LaravelMixpanelUserObserver;
+use Boparaiamrit\LaravelMixpanel\Console\Commands\Publish;
+use Boparaiamrit\LaravelMixpanel\Http\ViewComposers\AllViews;
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Contracts\View\View;
 use Illuminate\HTTP\Request;
