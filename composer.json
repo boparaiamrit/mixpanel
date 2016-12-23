@@ -10,17 +10,17 @@
 	],
 	"autoload": {
 		"psr-4": {
-			"Boparaiamrit\\LaravelMixpanel\\": "src/"
+			"Boparaiamrit\\Mixpanel\\": "src/"
 		}
 	},
 	"require": {
 		"php": ">=7.0.0",
-		"illuminate/config": "5.1.* || 5.3.*",
-		"illuminate/events": "5.1.* || 5.3.*",
-		"illuminate/routing": "5.1.* || 5.3.*",
-		"illuminate/support": "5.1.* || 5.3.*",
+		"illuminate/config": "5.1.* || 5.2.*  || 5.3.*",
+		"illuminate/events": "5.1.* || 5.2.*  || 5.3.*",
+		"illuminate/routing": "5.1.* || 5.2.*  || 5.3.*",
+		"illuminate/support": "5.1.* || 5.2.*  || 5.3.*",
 		"nesbot/carbon": "^1.19",
-		"mixpanel/mixpanel-php": "~2.0",
+		"mixpanel/mixpanel-php": "2.*",
 		"sinergi/browser-detector": "~5.0"
 	},
 	"require-dev": {
@@ -28,7 +28,7 @@
 	},
 	"autoload-dev": {
 		"psr-4": {
-			"Boparaiamrit\\LaravelMixpanel\\Tests\\": "tests/"
+			"Boparaiamrit\\Mixpanel\\Tests\\": "tests/"
 		}
 	}
 }

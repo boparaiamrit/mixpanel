@@ -1,5 +1,5 @@
 <?php
 
-use Boparaiamrit\LaravelMixpanel\Http\Controllers\StripeWebhooksController;
+use Boparaiamrit\Mixpanel\Http\Controllers\StripeWebhooksController;
 
-Route::post('genealabs/laravel-mixpanel/stripe', StripeWebhooksController::class .'@postTransaction');
+Route::post('mixpanel/stripe', StripeWebhooksController::class . '@postTransaction');
