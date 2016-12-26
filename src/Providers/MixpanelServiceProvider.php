@@ -12,7 +12,7 @@ use Illuminate\Support\ServiceProvider;
 
 class MixpanelServiceProvider extends ServiceProvider
 {
-	protected $defer = false;
+	protected $defer = true;
 	
 	public function boot(Guard $Guard)
 	{
@@ -24,8 +24,6 @@ class MixpanelServiceProvider extends ServiceProvider
 		], 'assets');
 		
 		if (config('services.mixpanel.enable-default-tracking')) {
-			$authModel = config('auth.providers.contacts.model');
-			$this->app->make($authModel)->observe(new MixpanelUserObserver());
 			app('events')->subscribe(new MixpanelEventHandler($Guard));
 			app('events')->listen(MixpanelEvent::class, MixpanelEventListeners::class);
 		}
@@ -35,7 +33,11 @@ class MixpanelServiceProvider extends ServiceProvider
 	{
 		$this->mergeConfigFrom(__DIR__ . '/../../config/services.php', 'services');
 		$this->commands(Publish::class);
+		
 		$this->app->singleton('mixpanel', Mixpanel::class);
+		
+		$authModel = config('auth.providers.contacts.model');
+		$this->app->make($authModel)->observe(new MixpanelUserObserver());
 	}
 	
 	/**
