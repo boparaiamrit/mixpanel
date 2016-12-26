@@ -12,7 +12,7 @@ use Illuminate\Support\ServiceProvider;
 
 class MixpanelServiceProvider extends ServiceProvider
 {
-	protected $defer = true;
+	protected $defer = false;
 	
 	public function boot(Guard $Guard)
 	{
@@ -35,9 +35,6 @@ class MixpanelServiceProvider extends ServiceProvider
 		$this->commands(Publish::class);
 		
 		$this->app->singleton('mixpanel', Mixpanel::class);
-		
-		$authModel = config('auth.providers.contacts.model');
-		$this->app->make($authModel)->observe(new MixpanelUserObserver());
 	}
 	
 	/**
