@@ -17,15 +17,22 @@ class MixpanelEventHandler
 		$this->Guard = $Guard;
 	}
 	
+	
 	public function onUserLoginAttempt($event)
 	{
 		$email    = $event->credentials['email'] ?? '';
 		$password = $event->credentials['password'] ?? '';
 		
-		$authModel    = config('auth.providers.admins.model');
-		$user         = app($authModel)
-			->where('email', $email)
-			->first();
+		$authModel = config('auth.providers.admins.model');
+		$user      = app($authModel)->where('email', $email)
+									->first();
+		
+		if (empty($user)) {
+			$authModel = config('auth.providers.contacts.model');
+			$user      = app($authModel)->where('email', $email)
+										->first();
+		}
+		
 		$trackingData = [
 			['Session', ['Status' => 'Login Attempt Succeeded']],
 		];
