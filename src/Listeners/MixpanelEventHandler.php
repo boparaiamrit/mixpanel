@@ -44,7 +44,11 @@ class MixpanelEventHandler
 			$trackingData = [
 				['Session', ['Status' => 'Login Attempt Failed']],
 			];
-		}
+		} elseif (empty($user)){
+             return redirect()->back()
+                ->withInput(['email' => $email])
+                ->withErrors(['email' => 'Email or Password doesn\'t Match.']);
+        }
 		
 		event(new MixpanelEvent('Login Attempt', $user, $trackingData));
 	}
